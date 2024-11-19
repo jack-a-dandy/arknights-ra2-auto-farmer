@@ -86,7 +86,7 @@ class ArknightsRA2Farmer(threading.Thread):
         time.sleep(2)
         #confirm exit
         self.device.shell("input tap 1016 476")
-        time.sleep(4)
+        time.sleep(4.5)
         #tap on screen for reward
         self.device.shell("input tap 618 392")
         time.sleep(8)
