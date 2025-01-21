@@ -231,6 +231,11 @@ class ArknightsRA2Farmer(threading.Thread):
         self.device.shell("input tap 643 593")
         time.sleep(3)
         
+        #skip new-area=dialog
+        for i in range(6):
+            self.device.shell("input tap 600 600")
+            time.sleep(1.5)
+        
         #4th day - end of run
         self.wipe_data()
         
